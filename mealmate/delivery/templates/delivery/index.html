@@ -1,0 +1,10 @@
+{% extends "delivery/base.html" %} {% block content %}
+
+{% load static %}
+<link rel = "stylesheet" href = "{% static 'delivery/css/style.css' %}"></link>
+
+<h3>Welcome to Meal-mate</h3>
+<a href = "{% url 'delivery:sign_up' %}">Sign Up</a>
+<a href = "{% url 'delivery:sign_in' %}">Sign In</a>
+
+{% endblock %}

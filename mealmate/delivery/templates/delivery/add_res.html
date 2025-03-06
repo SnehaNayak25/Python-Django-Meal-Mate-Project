@@ -1,0 +1,11 @@
+{% extends "delivery/base.html" %} {% block content %}
+
+<h1>Add Restaurants</h1>
+
+<form method ="POST" >
+    {% csrf_token %}
+   {{form}}
+<button>Submit</button>
+</form>
+
+{% endblock %}
